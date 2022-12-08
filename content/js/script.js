@@ -52,7 +52,7 @@ async function sendFormData() {
                 "username": username.value,
                 "email": email.value,
             }))
-            window.location.href = "/succeed.html";
+            window.location.href = "succeed.html";
         }
     } catch (err) {
         console.log(err)
