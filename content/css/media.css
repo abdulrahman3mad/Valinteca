@@ -23,7 +23,9 @@
 }
 
 @media screen and (max-width:992px) {
-
+    body{
+        margin:150px 0;
+    }
 
     .signup-pg .img-box {
         height: 315px !important;

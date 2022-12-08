@@ -70,7 +70,6 @@ function displayErrors(errors) {
 }
 
 function validateForm(input) {
-    // Username
     let errors = {
         "username": [],
         "email": [],
