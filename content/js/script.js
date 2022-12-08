@@ -48,15 +48,19 @@ async function sendFormData() {
         if (data && data.errors && Object.keys(data.errors).length) displayErrors(data.errors)
 
         else {
-            localStorage.setItem("user", JSON.stringify({
-                "username": username.value,
-                "email": email.value,
-            }))
-            window.location.href = "succeed.html";
+            saveInStorage();
+            window.location.replace("/succeed.html")
         }
     } catch (err) {
         console.log(err)
     }
+}
+
+function saveInStorage() {
+    localStorage.setItem("user", JSON.stringify({
+        "username": username.value,
+        "email": email.value,
+    }))
 }
 
 function displayErrors(errors) {
@@ -84,8 +88,8 @@ function validateForm(input) {
 
 
     displayErrors(errors);
-    for(let err in errors){
-       if(errors[err][0] !== "") return false;
+    for (let err in errors) {
+        if (errors[err][0] !== "") return false;
     }
     return true
 }
