@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="content/css/vendors/bootstrap.min.css" />
+    <link rel="stylesheet" href="content/css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <main class="succeed-pg | px-5 py-lg-5 py-4 rounded-1">
+        <div class="row justify-content-around text-center align-items-center text-xl-start">
+          <div class="col-xl-5 col-12">
+            <div class="img-box | rounded-3"></div>
+          </div>
+          <div class="col-xl-5 col-12">
+            <div class="text-box | mt-5">
+              <h1 class="mb-4 text-box-header">Successfully logged in</h1>
+              <a href="#" id="email-text"> User@gmail.com </a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      let email = document.querySelector("#email-text");
+      let user = JSON.parse(localStorage.getItem("user"));
+      email.innerText = user.email;
+      email.setAttribute("href", `mailto: ${user.email}`)
+    </script>
+  </body>
+</html>

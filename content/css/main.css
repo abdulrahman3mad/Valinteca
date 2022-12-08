@@ -1,0 +1,151 @@
+@import url("utilities.css");
+@import url("media.css");
+
+/* Start General Style */
+body {
+    height: 100vh;
+    background-image: url("../assets/imgs/1ea4fa941cbe4148b4f953d4f5b1c969.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.img-box {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+p {
+    margin: 0 0 40px 0
+}
+
+.text-box-header {
+    margin: 0 0 20px 0;
+    color: #2D2D2D
+}
+
+a {
+    color: #1F1249;
+    font-size: 1rem
+}
+
+main {
+    background-color: #F5F7FFD9;
+}
+
+/* End General */
+
+/* Start Components*/
+.main-btn {
+    background-image: -o-linear-gradient(#2663DF, #758FF0);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#2663DF), to(#758FF0));
+    background-image: linear-gradient(#2663DF, #758FF0);
+    -webkit-box-shadow: 0 6px 18px 0 #9CADF2;
+            box-shadow: 0 6px 18px 0 #9CADF2;
+    text-decoration: none;
+}
+
+/* End Components */
+
+/* Start Welcome Page  */
+.welcome-pg .img-box {
+    background-image: url('../assets/imgs/e6e913c64abc73e5616fdac852e235c4.jfif');
+    height: 400px;
+}
+
+.welcome-pg .text-box-header {
+    font-size: 3.5rem
+}
+
+/* End Welcome Page */
+
+/* Start SignUp Page */
+.signup-pg .img-box {
+    height: 620px;
+    background-image: url("../assets/imgs/56f58c5bbae6320e1aa5d36445fd722b.jfif")
+}
+
+.signup-pg .text-box-header {
+    font-size: 2.625rem
+}
+
+.signup-pg form {
+    margin-bottom: 20px;
+}
+
+.signup-pg .input-container{
+    margin-bottom: 12px;
+}
+
+.signup-pg .input-icon {
+    border-right: 1px solid #DBE3FF;
+}
+
+.signup-pg .input-border {
+    border: 1px solid #DBE3FF
+}
+
+.signup-pg input {
+    width: 100%
+}
+
+.signup-pg input:focus {
+    outline: none;
+}
+
+.signup-pg input::-webkit-input-placeholder {
+    color: #898989;
+}
+
+.signup-pg input::-moz-placeholder {
+    color: #898989;
+}
+
+.signup-pg input:-ms-input-placeholder {
+    color: #898989;
+}
+
+.signup-pg input::-ms-input-placeholder {
+    color: #898989;
+}
+
+.signup-pg input::placeholder {
+    color: #898989;
+}
+
+.signup-pg .unvalid-text {
+    color: rgb(255, 49, 49);
+    margin-bottom: 1.2rem;
+    display: none;
+}
+
+
+/* End SignUp Page */
+
+/* Start Succeed Page */
+.succeed-pg .img-box {
+    background-image: url("../assets/imgs/ea2e1cc89fe6186afba2ac5e3a2eebdc.jfif");
+    height: 450px;
+}
+
+.succeed-pg .text-box-header {
+    font-size: 2.625rem
+}
+
+/* End Succeed Page */
