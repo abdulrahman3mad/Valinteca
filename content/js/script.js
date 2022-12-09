@@ -49,7 +49,7 @@ async function sendFormData() {
 
         else {
             saveInStorage();
-            window.location.replace("succeed.html")
+            window.location.replace("./succeed.html")
         }
     } catch (err) {
         console.log(err)
@@ -82,15 +82,13 @@ function validateForm() {
     };
 
     validateInput(errors, username) && validateInput(errors, email) && validateInput(errors, password);
-    if (passwordConfirm.value !== password.value)
-        errors.password_confirmation = ["The password confirmation doesn't match"]
+    if(passwordConfirm.value === "") errors.password_confirmation = ["Password confirmation is required"];
+    else if (passwordConfirm.value !== password.value) errors.password_confirmation = ["The password confirmation doesn't match"]
     else errors.password_confirmation = [""]
 
-
     displayErrors(errors);
-    for (let err in errors) {
-        if (errors[err][0] !== "") return false;
-    }
+    for (let err in errors)  if (errors[err][0] !== "") return false;
+    
     return true
 }
 
