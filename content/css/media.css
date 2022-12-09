@@ -18,24 +18,21 @@
     }
 
     body {
-        margin: 50px 0;
+        margin:100px;
     }
 }
 
 @media screen and (max-width:992px) {
     body{
-        margin:150px 0;
+        margin: -10px 0;
+    }
+    .signup-pg {
+        margin-top: 100px;
     }
 
     .signup-pg .img-box {
         height: 315px !important;
     }
-}
-
-
-
-.signup-pg .text-box-desc {
-    font-size: 1rem !important;
 }
 
 /* End Signup Page */

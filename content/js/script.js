@@ -73,7 +73,7 @@ function displayErrors(errors) {
     })
 }
 
-function validateForm(input) {
+function validateForm() {
     let errors = {
         "username": [],
         "email": [],
@@ -95,7 +95,6 @@ function validateForm(input) {
 }
 
 function validateInput(errors, input) {
-
     let inputname = input.getAttribute("name");
     let [inputRegex, errMessage] = formRegex[inputname];
 
