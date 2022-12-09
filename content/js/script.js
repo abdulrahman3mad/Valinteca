@@ -49,7 +49,7 @@ async function sendFormData() {
 
         else {
             saveInStorage();
-            window.location.replace("succeed.html")
+            window.location.replace("/Valinteca-/succeed.html")
         }
     } catch (err) {
         console.log(err)
