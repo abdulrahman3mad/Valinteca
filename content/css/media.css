@@ -18,20 +18,25 @@
     }
 
     body {
-        margin:100px;
+        margin: 100px;
     }
 }
 
 @media screen and (max-width:992px) {
-    body{
+    body {
         margin: -10px 0;
     }
+
     .signup-pg {
         margin-top: 210px;
     }
 
     .signup-pg .img-box {
         height: 255px !important;
+    }
+
+    .signup-pg .text-box-desc {
+        font-size: 1rem !important;
     }
 }
 
