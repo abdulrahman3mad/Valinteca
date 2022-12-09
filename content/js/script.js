@@ -14,7 +14,7 @@ let InputNames = {
 }
 
 const formRegex = {
-    "username": [/^[a-zA-Z]{1}[a-zA-Z0-9]{4,14}/, "must contain 5 to 15 char and only start with a letter"],
+    "username": [/^[a-zA-Z]{1}[a-zA-Z0-9]{3,13}[a-zA-Z]{1}/, "must contain 5 to 15 char and only start with a letter"],
     "email": [/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z]+/, "must be a valid email address. ex: example@gmail.com"],
     "password": [/[a-zA-Z0-9]{8,}/, "password must contain at least 8 char"],
 }
